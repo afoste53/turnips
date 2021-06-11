@@ -1,10 +1,7 @@
 import { Container } from "react-bootstrap";
 import { Line } from "react-chartjs-2";
-import annotationPlugin from "chartjs-plugin-annotation";
 
 const StockGraphComponent = ({ prices }) => {
-  const purchasePrice = prices[0];
-
   const data = {
     labels: [
       "Sunday",
