@@ -1,23 +1,9 @@
 import { Container } from "react-bootstrap";
 import { Line } from "react-chartjs-2";
 
-const StockGraphComponent = ({ prices }) => {
+const StockGraphComponent = ({ prices, labels }) => {
   const data = {
-    labels: [
-      "Sunday",
-      "Mon AM",
-      "Mon PM",
-      "Tues AM",
-      "Tues PM",
-      "Wed AM",
-      "Wed PM",
-      "Thurs AM",
-      "Thurs PM",
-      "Fri AM",
-      "Fri PM",
-      "Sat Am",
-      "Sat PM",
-    ],
+    labels,
     datasets: [
       {
         label: "Price in Bells",
